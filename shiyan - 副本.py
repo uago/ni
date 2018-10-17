@@ -20,10 +20,15 @@ repo = git.Repo(path='E:/ni')
 remote = repo.remote()
 git = repo.git
 # git.add(".") #全部提交ok
-git.commit("-m", '')
-#remote.push() #推送ok
+#git.commit("-m", 'shiyan')#ok
+# remote.push() #推送ok
 #remote.push()
 #remote.fetch()
 # remote.pull()
 #一键提交，包含add、commit、push操作
-# def add_com_push():
+def add_com_push():
+    git.add(".")
+    git.commit("-m","shiyanh")
+    remote.push()
+
+add_com_push()
