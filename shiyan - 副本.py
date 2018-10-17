@@ -17,11 +17,11 @@ repo = git.Repo(path='E:/ni')
 
 
 # print repo
-# remote = repo.remote()
+remote = repo.remote()
 git = repo.git
-git.add(".")
-# git.commit()
-# remote.push()
+# git.add(".") #全部提交ok
+git.commit("-m", '')
+#remote.push() #推送ok
 #remote.push()
 #remote.fetch()
 # remote.pull()
